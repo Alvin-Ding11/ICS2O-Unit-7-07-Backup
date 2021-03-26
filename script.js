@@ -11,16 +11,16 @@ function calc () {
   int2 = document.getElementById('in2').value
   int2 = parseInt(int2)
 
-  for (count = 0; count < int1; count++) {
-    ans = ans + int2
-  }
-
-  if (int1 < 0 || int2 < 0) {
+    if (int1 < 0 || int2 < 0) {
     document.getElementById('answer').innerHTML = '-' + ans
   } else if (int1 < 0 && int2 < 0) {
     document.getElementById('answer').innerHTML = ans
   } else {
     document.getElementById('answer').innerHTML = ans
+  }
+
+  for (count = 0; count < int1; count++) {
+    ans = ans + int2
   }
 
 function reload () {
